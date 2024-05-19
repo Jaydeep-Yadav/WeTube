@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Backend Project Setup",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -12,5 +14,14 @@
     "setup"
   ],
   "author": "Jaydeep Yadav",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0"
+  }
 }
