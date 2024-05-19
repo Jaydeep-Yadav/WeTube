@@ -1,0 +1,16 @@
+{
+  "name": "backend-project-setup",
+  "version": "1.0.0",
+  "description": "Backend Project Setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nodejs",
+    "Backend",
+    "setup"
+  ],
+  "author": "Jaydeep Yadav",
+  "license": "ISC"
+}
