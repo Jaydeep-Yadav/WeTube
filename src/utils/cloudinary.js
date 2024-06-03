@@ -14,12 +14,13 @@ const uploadOnCloudinary = async (localFilePath) => {
         //? upload the file on cloudinary //
 
         const response = await cloudinary.uploader.upload(localFilePath, {
-            resource_type: "auto"
+            resource_type: "auto",
+            folder: "WeTube"
         })
 
         //? File has been uploaded successfully //
-        console.log("File is uploaded on cloudinary", response.url);
-
+        // console.log("File is uploaded on cloudinary", response.url);
+        fs.unlinkSync(localFilePath); //? Remove file from Local File Path after uploading //
         return response;
     } catch (error) {
         fs.unlinkSync(localFilePath); //? Remove file from Local File Path //
