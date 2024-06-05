@@ -1,7 +1,7 @@
 {
-  "name": "backend-project-setup",
+  "name": "wetube",
   "version": "1.0.0",
-  "description": "Backend Project Setup",
+  "description": "WeTube - A Video Sharing Webapp",
   "main": "index.js",
   "type": "module",
   "scripts": {
